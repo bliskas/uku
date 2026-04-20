@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g6bg" cx="0.5" cy="0.3">
+      <stop offset="0%" stop-color="#FBF6EC"/>
+      <stop offset="100%" stop-color="#E1D4EC"/>
+    </radialGradient>
+    <linearGradient id="g6t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#CBB8DC"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="0.5" cy="0.5">
+      <stop offset="0%" stop-color="#F4D4BE" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#F4D4BE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F4D4BE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="500" height="700" fill="url(#g6bg)"/>
+
+  <!-- Lamp glow behind -->
+  <ellipse cx="250" cy="380" rx="280" ry="280" fill="url(#lampGlow)"/>
+
+  <!-- Torso as illuminated lamp -->
+  <g transform="translate(250,420)">
+    <ellipse cx="0" cy="230" rx="95" ry="14" fill="#7A5F9C" opacity="0.2"/>
+
+    <!-- Wooden base -->
+    <ellipse cx="0" cy="220" rx="85" ry="12" fill="#D9C8A3"/>
+    <ellipse cx="0" cy="215" rx="85" ry="12" fill="#EADFC6"/>
+
+    <!-- Inner glow -->
+    <path d="
+      M -60,-220 C -70,-185 -75,-140 -70,-95
+      C -85,-50 -95,5 -90,60
+      C -75,90 -30,100 0,100
+      C 30,100 75,90 90,60
+      C 95,5 85,-50 70,-95
+      C 75,-140 70,-185 60,-220
+      C 40,-245 -40,-245 -60,-220 Z"
+      fill="#F4D4BE" opacity="0.6"/>
+
+    <!-- Torso as lamp (translucent effect) -->
+    <path d="
+      M -70,-240 C -80,-200 -85,-150 -80,-100
+      C -95,-55 -105,0 -100,50
+      C -90,95 -40,135 0,200
+      C 40,135 90,95 100,50
+      C 105,0 95,-55 80,-100
+      C 85,-150 80,-200 70,-240
+      C 50,-265 -50,-265 -70,-240 Z"
+      fill="url(#g6t)" opacity="0.85"/>
+
+    <!-- Highlight down middle -->
+    <path d="
+      M -20,-240 C -25,-200 -28,-100 -22,0
+      C -26,60 -20,140 0,200
+      C 20,140 26,60 22,0
+      C 28,-100 25,-200 20,-240 Z"
+      fill="#FBF6EC" opacity="0.35"/>
+
+    <!-- Neck / top -->
+    <ellipse cx="0" cy="-248" rx="22" ry="6" fill="#7A5F9C" opacity="0.4"/>
+    <circle cx="0" cy="-258" r="4" fill="#3E2B5A"/>
+
+    <ellipse cx="0" cy="30" rx="3" ry="4" fill="#7A5F9C" opacity="0.3"/>
+  </g>
+
+  <!-- Cord -->
+  <line x1="250" y1="160" x2="250" y2="0" stroke="#3E2B5A" stroke-width="1" opacity="0.4"/>
+</svg>

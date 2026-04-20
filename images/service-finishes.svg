@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF6EC"/>
+      <stop offset="100%" stop-color="#F5EEDF"/>
+    </linearGradient>
+    <linearGradient id="torso3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0E8F5"/>
+      <stop offset="100%" stop-color="#CBB8DC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg3)"/>
+
+  <!-- Three cropped torso details showcasing different finishes -->
+
+  <!-- Detail 1: Gold leaf -->
+  <g transform="translate(100,100)">
+    <rect x="0" y="0" width="130" height="250" fill="url(#torso3)" rx="8"/>
+    <!-- Gold leaf flakes -->
+    <g>
+      <polygon points="20,30 40,25 45,50 25,55" fill="#D9C8A3" opacity="0.85"/>
+      <polygon points="55,80 75,78 78,100 60,105" fill="#D9C8A3" opacity="0.8"/>
+      <polygon points="30,130 50,125 52,150 32,152" fill="#D9C8A3" opacity="0.75"/>
+      <polygon points="70,170 88,168 90,192 72,195" fill="#D9C8A3" opacity="0.85"/>
+      <polygon points="40,210 55,208 57,228 42,230" fill="#D9C8A3" opacity="0.7"/>
+      <polygon points="90,40 105,38 108,58 92,60" fill="#D9C8A3" opacity="0.65"/>
+    </g>
+    <!-- Subtle highlight -->
+    <rect x="0" y="0" width="130" height="250" fill="none" stroke="#D9C8A3" stroke-width="0.5" opacity="0.4" rx="8"/>
+  </g>
+
+  <!-- Detail 2: Dried flowers -->
+  <g transform="translate(240,100)">
+    <rect x="0" y="0" width="130" height="250" fill="url(#torso3)" rx="8"/>
+    <!-- Dried flowers scattered -->
+    <g transform="translate(40,60)">
+      <circle cx="0" cy="0" r="6" fill="#F4D4BE"/>
+      <circle cx="8" cy="-5" r="5" fill="#F4D4BE"/>
+      <circle cx="-8" cy="-5" r="5" fill="#F4D4BE"/>
+      <circle cx="4" cy="7" r="5" fill="#F4D4BE"/>
+      <circle cx="-4" cy="7" r="5" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2.5" fill="#D9C8A3"/>
+    </g>
+    <g transform="translate(85,130)">
+      <circle cx="0" cy="0" r="5" fill="#F4D4BE" opacity="0.9"/>
+      <circle cx="6" cy="-4" r="4" fill="#F4D4BE" opacity="0.9"/>
+      <circle cx="-6" cy="-4" r="4" fill="#F4D4BE" opacity="0.9"/>
+      <circle cx="3" cy="5" r="4" fill="#F4D4BE" opacity="0.9"/>
+      <circle cx="-3" cy="5" r="4" fill="#F4D4BE" opacity="0.9"/>
+      <circle cx="0" cy="0" r="2" fill="#D9C8A3"/>
+    </g>
+    <g transform="translate(35,195)">
+      <ellipse cx="0" cy="0" rx="8" ry="4" fill="#B7C7AD" opacity="0.8"/>
+      <ellipse cx="12" cy="-3" rx="7" ry="3" fill="#B7C7AD" opacity="0.8"/>
+    </g>
+    <rect x="0" y="0" width="130" height="250" fill="none" stroke="#CBB8DC" stroke-width="0.5" opacity="0.4" rx="8"/>
+  </g>
+
+  <!-- Detail 3: Pastel wash -->
+  <g transform="translate(380,100)">
+    <rect x="0" y="0" width="130" height="250" fill="#F0E8F5" rx="8"/>
+    <!-- Brushstroke pastel washes -->
+    <ellipse cx="50" cy="80" rx="50" ry="30" fill="#A791C4" opacity="0.35"/>
+    <ellipse cx="90" cy="160" rx="55" ry="35" fill="#F4D4BE" opacity="0.45"/>
+    <ellipse cx="40" cy="200" rx="40" ry="25" fill="#B7C7AD" opacity="0.35"/>
+    <!-- Gold dots scattered -->
+    <circle cx="30" cy="30" r="2" fill="#D9C8A3"/>
+    <circle cx="80" cy="50" r="2" fill="#D9C8A3"/>
+    <circle cx="105" cy="105" r="2" fill="#D9C8A3"/>
+    <circle cx="25" cy="145" r="2" fill="#D9C8A3"/>
+    <circle cx="95" cy="220" r="2" fill="#D9C8A3"/>
+    <rect x="0" y="0" width="130" height="250" fill="none" stroke="#A791C4" stroke-width="0.5" opacity="0.4" rx="8"/>
+  </g>
+
+  <!-- Small text-like labels (decorative) -->
+  <g opacity="0.4">
+    <line x1="100" y1="370" x2="230" y2="370" stroke="#A791C4" stroke-width="0.8"/>
+    <line x1="240" y1="370" x2="370" y2="370" stroke="#A791C4" stroke-width="0.8"/>
+    <line x1="380" y1="370" x2="510" y2="370" stroke="#A791C4" stroke-width="0.8"/>
+  </g>
+  <g fill="#7A5F9C" opacity="0.6">
+    <circle cx="165" cy="385" r="1.5"/>
+    <circle cx="305" cy="385" r="1.5"/>
+    <circle cx="445" cy="385" r="1.5"/>
+  </g>
+</svg>

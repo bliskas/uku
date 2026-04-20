@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0E8F5"/>
+      <stop offset="100%" stop-color="#E1D4EC"/>
+    </linearGradient>
+    <linearGradient id="torso2" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#E1D4EC"/>
+      <stop offset="50%" stop-color="#CBB8DC"/>
+      <stop offset="100%" stop-color="#A791C4"/>
+    </linearGradient>
+    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EADFC6"/>
+      <stop offset="100%" stop-color="#D9C8A3"/>
+    </linearGradient>
+    <radialGradient id="tableGlow" cx="0.5" cy="0.5">
+      <stop offset="0%" stop-color="#FBF6EC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FBF6EC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg2)"/>
+  <ellipse cx="300" cy="380" rx="280" ry="40" fill="url(#tableGlow)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="300" cy="385" rx="100" ry="12" fill="#7A5F9C" opacity="0.2"/>
+
+  <!-- Wooden base -->
+  <ellipse cx="300" cy="380" rx="95" ry="14" fill="url(#base)"/>
+  <ellipse cx="300" cy="375" rx="95" ry="14" fill="#F5EEDF"/>
+  <ellipse cx="300" cy="373" rx="85" ry="10" fill="#EADFC6"/>
+
+  <!-- 3D torso as vase -->
+  <g transform="translate(300,250)">
+    <!-- Back side / depth -->
+    <ellipse cx="0" cy="120" rx="85" ry="20" fill="#7A5F9C" opacity="0.15"/>
+
+    <!-- Main 3D torso body -->
+    <path d="
+      M -70,-130
+      C -80,-100 -85,-60 -80,-20
+      C -95,20 -100,70 -95,110
+      C -85,130 -40,138 0,138
+      C 40,138 85,130 95,110
+      C 100,70 95,20 80,-20
+      C 85,-60 80,-100 70,-130
+      C 50,-150 -50,-150 -70,-130 Z"
+      fill="url(#torso2)"/>
+
+    <!-- Highlight down the middle -->
+    <path d="
+      M -20,-140
+      C -25,-100 -30,-50 -25,0
+      C -30,50 -28,100 -10,130
+      C 0,130 5,130 10,130
+      C 28,100 30,50 25,0
+      C 30,-50 25,-100 20,-140 Z"
+      fill="#FBF6EC" opacity="0.18"/>
+
+    <!-- Left side shadow -->
+    <path d="
+      M -70,-130
+      C -80,-100 -85,-60 -80,-20
+      C -95,20 -100,70 -95,110
+      C -85,130 -65,135 -40,135
+      C -45,95 -50,50 -48,0
+      C -52,-50 -60,-95 -55,-125 Z"
+      fill="#7A5F9C" opacity="0.15"/>
+
+    <!-- Neck opening (vase top) -->
+    <ellipse cx="0" cy="-140" rx="24" ry="8" fill="#5D4579" opacity="0.4"/>
+    <ellipse cx="0" cy="-142" rx="24" ry="7" fill="#7A5F9C"/>
+
+    <!-- Belly button -->
+    <ellipse cx="0" cy="50" rx="3" ry="5" fill="#7A5F9C" opacity="0.35"/>
+  </g>
+
+  <!-- Dried flowers/branches coming out the top -->
+  <g transform="translate(300,105)">
+    <!-- Branch 1 -->
+    <path d="M -8,0 Q -30,-30 -50,-80" stroke="#B7C7AD" stroke-width="2" fill="none"/>
+    <ellipse cx="-18" cy="-20" rx="6" ry="3" fill="#B7C7AD" transform="rotate(-30 -18 -20)"/>
+    <ellipse cx="-30" cy="-40" rx="6" ry="3" fill="#B7C7AD" transform="rotate(-40 -30 -40)"/>
+    <ellipse cx="-42" cy="-60" rx="5" ry="3" fill="#B7C7AD" transform="rotate(-45 -42 -60)"/>
+
+    <!-- Branch 2 with flower -->
+    <path d="M 5,0 Q 15,-40 30,-70" stroke="#7A5F9C" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <g transform="translate(32,-72)">
+      <circle cx="0" cy="0" r="5" fill="#F4D4BE"/>
+      <circle cx="6" cy="-3" r="4" fill="#F4D4BE"/>
+      <circle cx="-6" cy="-3" r="4" fill="#F4D4BE"/>
+      <circle cx="3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="-3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2" fill="#D9C8A3"/>
+    </g>
+
+    <!-- Branch 3 -->
+    <path d="M 0,0 Q 0,-25 -5,-55" stroke="#B7C7AD" stroke-width="1.5" fill="none"/>
+    <ellipse cx="-3" cy="-40" rx="4" ry="2" fill="#B7C7AD"/>
+  </g>
+</svg>

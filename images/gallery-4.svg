@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g4bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="50%" stop-color="#F0E8F5"/>
+      <stop offset="100%" stop-color="#E1D4EC"/>
+    </linearGradient>
+    <linearGradient id="g4t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#CBB8DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="500" fill="url(#g4bg)"/>
+
+  <!-- Glow -->
+  <ellipse cx="500" cy="250" rx="400" ry="200" fill="#FBF6EC" opacity="0.4"/>
+
+  <!-- Torso covered in dried flowers (horizontal composition) -->
+  <g transform="translate(500,300)">
+    <ellipse cx="0" cy="160" rx="100" ry="12" fill="#7A5F9C" opacity="0.15"/>
+
+    <!-- Torso -->
+    <path d="
+      M -75,-170 C -85,-135 -90,-90 -85,-45
+      C -100,0 -110,60 -105,120
+      C -90,150 -40,160 0,160
+      C 40,160 90,150 105,120
+      C 110,60 100,0 85,-45
+      C 90,-90 85,-135 75,-170
+      C 55,-195 -55,-195 -75,-170 Z"
+      fill="url(#g4t)"/>
+
+    <!-- Dried flowers scattered across -->
+    <g transform="translate(-35,-80)">
+      <circle cx="0" cy="0" r="7" fill="#F4D4BE"/>
+      <circle cx="9" cy="-5" r="6" fill="#F4D4BE"/>
+      <circle cx="-9" cy="-5" r="6" fill="#F4D4BE"/>
+      <circle cx="5" cy="8" r="6" fill="#F4D4BE"/>
+      <circle cx="-5" cy="8" r="6" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="3" fill="#D9C8A3"/>
+    </g>
+    <g transform="translate(30,-30)">
+      <circle cx="0" cy="0" r="6" fill="#F4D4BE"/>
+      <circle cx="8" cy="-4" r="5" fill="#F4D4BE"/>
+      <circle cx="-8" cy="-4" r="5" fill="#F4D4BE"/>
+      <circle cx="4" cy="6" r="5" fill="#F4D4BE"/>
+      <circle cx="-4" cy="6" r="5" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2.5" fill="#D9C8A3"/>
+    </g>
+    <g transform="translate(-20,40)">
+      <circle cx="0" cy="0" r="5" fill="#F4D4BE"/>
+      <circle cx="7" cy="-4" r="4" fill="#F4D4BE"/>
+      <circle cx="-7" cy="-4" r="4" fill="#F4D4BE"/>
+      <circle cx="3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="-3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2" fill="#D9C8A3"/>
+    </g>
+    <g transform="translate(45,80)">
+      <circle cx="0" cy="0" r="5" fill="#F4D4BE"/>
+      <circle cx="7" cy="-4" r="4" fill="#F4D4BE"/>
+      <circle cx="-7" cy="-4" r="4" fill="#F4D4BE"/>
+      <circle cx="3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="-3" cy="5" r="4" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2" fill="#D9C8A3"/>
+    </g>
+
+    <!-- Eucalyptus leaves -->
+    <g fill="#B7C7AD" opacity="0.85">
+      <ellipse cx="-60" cy="-130" rx="9" ry="4" transform="rotate(-30 -60 -130)"/>
+      <ellipse cx="60" cy="-130" rx="9" ry="4" transform="rotate(30 60 -130)"/>
+      <ellipse cx="-55" cy="100" rx="8" ry="4" transform="rotate(-20 -55 100)"/>
+      <ellipse cx="55" cy="-80" rx="8" ry="4" transform="rotate(40 55 -80)"/>
+      <ellipse cx="-80" cy="20" rx="8" ry="4" transform="rotate(-50 -80 20)"/>
+    </g>
+    <ellipse cx="0" cy="60" rx="3" ry="4" fill="#7A5F9C" opacity="0.3"/>
+  </g>
+</svg>

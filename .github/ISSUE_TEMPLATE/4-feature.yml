@@ -1,0 +1,63 @@
+name: ✨ Idea nueva o funcionalidad
+description: Añadir una sección, una nueva función o hacer un cambio grande
+title: "[Idea] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Genial que tengas una idea nueva! 💡
+        Cuéntamela sin filtros — después lo afinamos juntos.
+
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre corto de la idea
+      description: Una frase para identificar la idea.
+      placeholder: Ej — Reserva de cita con calendario online
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: ¿Qué quieres conseguir?
+      description: Describe qué debería poder hacer la web que ahora no hace.
+      placeholder: Ej — Que las clientas puedan elegir día y hora directamente sin tener que hablar conmigo primero
+    validations:
+      required: true
+
+  - type: textarea
+    id: porque
+    attributes:
+      label: ¿Por qué? ¿Para qué te serviría?
+      description: El contexto nos ayuda a diseñarlo bien.
+      placeholder: Ej — Me ahorraría muchas conversaciones por WhatsApp los fines de semana
+    validations:
+      required: true
+
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referencias o inspiración (opcional)
+      description: Webs, apps o cuentas de Instagram donde hayas visto algo parecido.
+      placeholder: |
+        https://...
+        https://...
+
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: ¿Qué prioridad tiene para ti?
+      options:
+        - Me encantaría tenerlo pronto
+        - Estaría bien, cuando podamos
+        - Idea para el futuro, sin prisa
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Algo más que quieras contarme (opcional)
+      placeholder: Cualquier detalle o contexto adicional.

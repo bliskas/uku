@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="50%" stop-color="#F0E8F5"/>
+      <stop offset="100%" stop-color="#E1D4EC"/>
+    </linearGradient>
+    <linearGradient id="torso" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CBB8DC"/>
+      <stop offset="100%" stop-color="#A791C4"/>
+    </linearGradient>
+    <linearGradient id="torsoShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7A5F9C" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#7A5F9C" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FBF6EC" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#FBF6EC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FBF6EC" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#heroBg)"/>
+  <circle cx="400" cy="400" r="500" fill="url(#glow)"/>
+
+  <!-- Decorative arcs (moon phases nod to Lunaria) -->
+  <g opacity="0.18" stroke="#7A5F9C" stroke-width="1" fill="none">
+    <circle cx="400" cy="500" r="340"/>
+    <circle cx="400" cy="500" r="280"/>
+    <circle cx="400" cy="500" r="420"/>
+  </g>
+
+  <!-- Sun/moon circle behind -->
+  <circle cx="540" cy="260" r="90" fill="#F4D4BE" opacity="0.4"/>
+  <circle cx="540" cy="260" r="60" fill="#F4D4BE" opacity="0.3"/>
+
+  <!-- Pregnant torso silhouette, elegant curved -->
+  <g transform="translate(400,500)">
+    <!-- Shadow beneath -->
+    <ellipse cx="0" cy="280" rx="140" ry="18" fill="#7A5F9C" opacity="0.15"/>
+
+    <!-- Main torso shape (organic, elegant curves) -->
+    <path d="
+      M -85,-230
+      C -95,-200 -100,-160 -95,-120
+      C -115,-80 -125,-20 -130,40
+      C -135,110 -110,180 -60,230
+      C -30,260 30,260 60,230
+      C 110,180 135,110 130,40
+      C 125,-20 115,-80 95,-120
+      C 100,-160 95,-200 85,-230
+      C 70,-250 30,-255 0,-255
+      C -30,-255 -70,-250 -85,-230 Z"
+      fill="url(#torso)" filter="url(#soft)"/>
+
+    <!-- Highlight on left side -->
+    <path d="
+      M -85,-230
+      C -95,-200 -100,-160 -95,-120
+      C -115,-80 -125,-20 -130,40
+      C -135,110 -110,180 -60,230
+      L -60,230
+      C -50,140 -60,40 -70,-40
+      C -80,-130 -85,-200 -85,-230 Z"
+      fill="#FBF6EC" opacity="0.3"/>
+
+    <!-- Subtle shading overlay -->
+    <path d="
+      M -85,-230
+      C -95,-200 -100,-160 -95,-120
+      C -115,-80 -125,-20 -130,40
+      C -135,110 -110,180 -60,230
+      C -30,260 30,260 60,230
+      C 110,180 135,110 130,40
+      C 125,-20 115,-80 95,-120
+      C 100,-160 95,-200 85,-230
+      C 70,-250 30,-255 0,-255
+      C -30,-255 -70,-250 -85,-230 Z"
+      fill="url(#torsoShade)"/>
+
+    <!-- Belly button hint -->
+    <ellipse cx="0" cy="80" rx="4" ry="6" fill="#7A5F9C" opacity="0.3"/>
+  </g>
+
+  <!-- Floating botanical details - eucalyptus-like leaves -->
+  <g opacity="0.55">
+    <g transform="translate(140,180) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="18" ry="9" fill="#B7C7AD"/>
+      <ellipse cx="28" cy="-6" rx="16" ry="8" fill="#B7C7AD"/>
+      <ellipse cx="54" cy="-4" rx="14" ry="7" fill="#B7C7AD"/>
+      <line x1="-15" y1="4" x2="70" y2="-6" stroke="#7A5F9C" stroke-width="0.8" opacity="0.5"/>
+    </g>
+    <g transform="translate(660,820) rotate(160)">
+      <ellipse cx="0" cy="0" rx="20" ry="10" fill="#B7C7AD"/>
+      <ellipse cx="30" cy="-6" rx="18" ry="9" fill="#B7C7AD"/>
+      <ellipse cx="58" cy="-4" rx="14" ry="7" fill="#B7C7AD"/>
+      <line x1="-15" y1="4" x2="75" y2="-6" stroke="#7A5F9C" stroke-width="0.8" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Small flower accents (dried flowers nod) -->
+  <g opacity="0.7">
+    <g transform="translate(180,720)">
+      <circle cx="0" cy="0" r="5" fill="#F4D4BE"/>
+      <circle cx="8" cy="-6" r="4" fill="#F4D4BE"/>
+      <circle cx="-7" cy="-5" r="4" fill="#F4D4BE"/>
+      <circle cx="4" cy="6" r="4" fill="#F4D4BE"/>
+      <circle cx="-4" cy="7" r="4" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="2" fill="#7A5F9C"/>
+    </g>
+    <g transform="translate(620,280)">
+      <circle cx="0" cy="0" r="4" fill="#F4D4BE"/>
+      <circle cx="6" cy="-4" r="3.5" fill="#F4D4BE"/>
+      <circle cx="-6" cy="-4" r="3.5" fill="#F4D4BE"/>
+      <circle cx="3" cy="5" r="3.5" fill="#F4D4BE"/>
+      <circle cx="-3" cy="5" r="3.5" fill="#F4D4BE"/>
+      <circle cx="0" cy="0" r="1.5" fill="#7A5F9C"/>
+    </g>
+  </g>
+
+  <!-- Gold leaf dots (pan de oro) -->
+  <g opacity="0.6">
+    <circle cx="250" cy="380" r="3" fill="#D9C8A3"/>
+    <circle cx="590" cy="620" r="3" fill="#D9C8A3"/>
+    <circle cx="520" cy="480" r="2" fill="#D9C8A3"/>
+    <circle cx="280" cy="620" r="2" fill="#D9C8A3"/>
+    <circle cx="440" cy="180" r="2" fill="#D9C8A3"/>
+  </g>
+</svg>

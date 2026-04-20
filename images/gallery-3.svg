@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g3bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF6EC"/>
+      <stop offset="100%" stop-color="#F0E8F5"/>
+    </linearGradient>
+    <linearGradient id="g3t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#E1D4EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#g3bg)"/>
+
+  <!-- Torso covered in gold leaf -->
+  <g transform="translate(250,270)">
+    <ellipse cx="0" cy="180" rx="95" ry="14" fill="#7A5F9C" opacity="0.15"/>
+    <path d="
+      M -70,-140 C -80,-110 -85,-70 -80,-30
+      C -95,10 -105,60 -100,110
+      C -85,140 -35,150 0,150
+      C 35,150 85,140 100,110
+      C 105,60 95,10 80,-30
+      C 85,-70 80,-110 70,-140
+      C 50,-160 -50,-160 -70,-140 Z"
+      fill="url(#g3t)"/>
+
+    <!-- Gold leaf flakes scattered -->
+    <g fill="#D9C8A3">
+      <polygon points="-40,-90 -20,-95 -15,-70 -35,-65" opacity="0.85"/>
+      <polygon points="25,-50 50,-55 55,-30 28,-25" opacity="0.8"/>
+      <polygon points="-55,-20 -35,-25 -30,0 -50,5" opacity="0.75"/>
+      <polygon points="40,10 65,5 68,30 42,35" opacity="0.85"/>
+      <polygon points="-30,50 -10,45 -5,70 -25,75" opacity="0.7"/>
+      <polygon points="20,80 40,78 43,100 22,102" opacity="0.8"/>
+      <polygon points="-60,100 -40,95 -35,118 -58,122" opacity="0.65"/>
+      <polygon points="55,-120 72,-125 75,-102 58,-98" opacity="0.7"/>
+      <polygon points="-50,-140 -30,-145 -25,-122 -48,-118" opacity="0.75"/>
+      <polygon points="50,130 68,128 70,148 52,150" opacity="0.6"/>
+    </g>
+    <ellipse cx="0" cy="55" rx="3" ry="4" fill="#7A5F9C" opacity="0.3"/>
+  </g>
+</svg>

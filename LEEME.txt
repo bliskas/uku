@@ -1,0 +1,135 @@
+===========================================
+  LUNARIA ESTUDIO — Guía rápida para ti
+===========================================
+
+Esta es tu web. Son 3 archivos:
+
+  - index.html   → El contenido (lo que se ve)
+  - styles.css   → Los colores y el diseño
+  - script.js    → Los botones que se mueven (no tocar)
+
+
+-------------------------------------------
+ 1. VER LA WEB EN TU ORDENADOR
+-------------------------------------------
+Haz doble clic en "index.html". Se abre en tu navegador.
+Ya está. Así de fácil.
+
+
+-------------------------------------------
+ 2. LO QUE TIENES QUE CAMBIAR (MUY IMPORTANTE)
+-------------------------------------------
+Abre "index.html" con el Bloc de notas (botón derecho → Abrir con).
+Busca y reemplaza estas cosas (usa Ctrl+F para buscar):
+
+  A) TU NÚMERO DE WHATSAPP
+     Busca:    34600000000
+     Cámbialo por tu número con prefijo (sin +, sin espacios).
+     Ejemplo:  34612345678
+     Aparece 4 veces en index.html y 1 vez en script.js. Cámbialo en todas.
+
+  B) TU NOMBRE
+     Busca:    [Tu Nombre Apellido]
+     Cámbialo por tu nombre y apellido reales.
+
+  C) TU EMAIL
+     Busca:    hola@lunariaestudio.com
+     Cámbialo por tu email real (aparece 2 veces).
+
+  D) TU INSTAGRAM (opcional)
+     Busca:    https://instagram.com/
+     Cámbialo por https://instagram.com/tu_usuario
+
+Guarda el archivo (Ctrl+S). ¡Listo!
+
+
+-------------------------------------------
+ 3. CAMBIAR LAS FOTOS
+-------------------------------------------
+Ahora mismo las fotos son de Unsplash (gratis, de ejemplo).
+Cuando tengas tus fotos reales:
+
+  1. Crea una carpeta "images" junto a los otros archivos.
+  2. Guarda tus fotos ahí (ejemplo: "galeria-01.jpg").
+  3. En index.html, busca las líneas que empiezan con:
+        background-image:url('https://images.unsplash.com/...'
+     y cámbialas por:
+        background-image:url('images/galeria-01.jpg'
+
+  CONSEJO: Las fotos de galería deberían ser cuadradas o
+  verticales, con luz natural y fondo neutro.
+
+
+-------------------------------------------
+ 4. SUBIR LA WEB A INTERNET (GRATIS)
+-------------------------------------------
+La forma más sencilla y gratis es con NETLIFY:
+
+  1. Entra en https://app.netlify.com/drop
+  2. Arrastra TODA la carpeta a la zona que te indica.
+  3. En 20 segundos te da una dirección tipo:
+        https://lunaria-xxx.netlify.app
+  4. Eso ya es tu web en internet. Se puede compartir.
+
+
+-------------------------------------------
+ 5. CONECTAR TU DOMINIO PROPIO
+-------------------------------------------
+Como ya tienes dominio comprado:
+
+  1. En Netlify, entra en tu web recién subida.
+  2. Ve a "Domain settings" → "Add custom domain".
+  3. Escribe tu dominio (ej: lunariaestudio.com).
+  4. Te dirá unos "DNS records" (números).
+  5. Entra en la web donde compraste el dominio
+     (GoDaddy, IONOS, Namecheap…) y pégalos allí.
+  6. En 1-24 horas tu dominio apuntará a la web.
+
+  Si te lías: pide ayuda a alguien técnico o a soporte
+  de Netlify (tienen chat y explican paso a paso).
+
+
+-------------------------------------------
+ 6. ACTUALIZAR LA WEB DESPUÉS
+-------------------------------------------
+Cada vez que cambies algo:
+
+  OPCIÓN A (simple): vuelve a Netlify Drop y arrastra
+  la carpeta otra vez. Sobrescribe la anterior.
+
+  OPCIÓN B (profesional): conecta tu web a GitHub y cada
+  cambio se publica solo. Pregúntame cuando quieras.
+
+
+-------------------------------------------
+ 7. PALETA DE COLORES USADA
+-------------------------------------------
+Por si quieres usar estos colores en redes sociales,
+tarjetas o instagram:
+
+  Lavanda principal:   #8D6FB1
+  Lavanda oscuro:      #5D4579
+  Lavanda suave:       #ECE4F2
+  Crema fondo:         #FDFBF6
+  Crema cálido:        #F8F2E7
+  Melocotón acento:    #F4D4BE
+  Salvia verde:        #B7C7AD
+
+  Tipografías:
+    - Montserrat (títulos y textos)
+    - Cormorant Garamond (los italics elegantes)
+
+
+-------------------------------------------
+ 8. QUÉ FALTA POR DECIDIR
+-------------------------------------------
+Cuando quieras, hablamos de:
+
+  - Los precios exactos de cada servicio (ahora "desde 150 €")
+  - Textos legales (aviso legal, política de privacidad, cookies)
+  - Si quieres añadir reservas con calendario
+  - Si quieres añadir blog o artículos
+  - Fotos reales de tus piezas y del proceso
+
+
+¿Dudas? Pregúntame lo que sea, ahí estoy.

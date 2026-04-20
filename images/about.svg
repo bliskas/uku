@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="aboutBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#F0E8F5"/>
+    </linearGradient>
+    <linearGradient id="aboutFig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1D4EC"/>
+      <stop offset="100%" stop-color="#A791C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#aboutBg)"/>
+
+  <!-- Window light pattern -->
+  <g opacity="0.08" fill="#D9C8A3">
+    <rect x="100" y="80" width="80" height="120"/>
+    <rect x="420" y="80" width="80" height="120"/>
+  </g>
+
+  <!-- Hanging plants / decor -->
+  <g transform="translate(90,50)" opacity="0.5">
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#B7C7AD" stroke-width="1"/>
+    <ellipse cx="-10" cy="40" rx="8" ry="3" fill="#B7C7AD" transform="rotate(-30 -10 40)"/>
+    <ellipse cx="10" cy="60" rx="8" ry="3" fill="#B7C7AD" transform="rotate(30 10 60)"/>
+    <ellipse cx="-8" cy="75" rx="7" ry="3" fill="#B7C7AD" transform="rotate(-45 -8 75)"/>
+  </g>
+
+  <!-- Table / work surface -->
+  <rect x="50" y="580" width="500" height="4" fill="#D9C8A3" opacity="0.5"/>
+  <ellipse cx="300" cy="586" rx="250" ry="8" fill="#7A5F9C" opacity="0.1"/>
+
+  <!-- Finished torso piece on table -->
+  <g transform="translate(420,520)">
+    <path d="
+      M -35,-65 C -40,-50 -42,-30 -40,-15
+      C -48,5 -52,30 -50,50
+      C -42,62 -15,66 0,66
+      C 15,66 42,62 50,50
+      C 52,30 48,5 40,-15
+      C 42,-30 40,-50 35,-65
+      C 25,-75 -25,-75 -35,-65 Z"
+      fill="#CBB8DC"/>
+    <path d="M -35,-65 C -40,-50 -42,-30 -40,-15 C -48,5 -52,30 -50,50 L -35,50 C -38,20 -40,-10 -38,-40 L -35,-65 Z" fill="#FBF6EC" opacity="0.3"/>
+  </g>
+
+  <!-- Work tools on table -->
+  <g transform="translate(120,560)" opacity="0.7">
+    <rect x="0" y="0" width="6" height="22" fill="#D9C8A3"/>
+    <rect x="12" y="-5" width="6" height="27" fill="#7A5F9C"/>
+    <rect x="24" y="-2" width="6" height="24" fill="#D9C8A3"/>
+  </g>
+
+  <!-- Central figure: artist (stylized, abstract) -->
+  <g transform="translate(250,380)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="210" rx="100" ry="12" fill="#7A5F9C" opacity="0.15"/>
+
+    <!-- Body/apron -->
+    <path d="
+      M -60,40 C -80,80 -90,160 -80,200 L 80,200 C 90,160 80,80 60,40 Z"
+      fill="url(#aboutFig)"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="48" fill="#EADFC6"/>
+
+    <!-- Hair -->
+    <path d="
+      M -48,-25 C -52,-55 -40,-75 -10,-78
+      C 25,-82 48,-60 48,-30
+      C 48,-20 45,-10 42,-5
+      L 42,-20
+      C 40,-35 30,-50 10,-55
+      C -10,-58 -30,-50 -40,-35
+      C -45,-25 -48,-10 -48,-5 Z"
+      fill="#3E2B5A"/>
+
+    <!-- Face (minimal, abstract) -->
+    <ellipse cx="-12" cy="-15" rx="2" ry="3" fill="#3E2B5A"/>
+    <ellipse cx="12" cy="-15" rx="2" ry="3" fill="#3E2B5A"/>
+    <path d="M -8,5 Q 0,10 8,5" stroke="#3E2B5A" stroke-width="1.5" fill="none"/>
+
+    <!-- Neckline -->
+    <path d="M -25,20 Q 0,35 25,20 L 25,40 Q 0,50 -25,40 Z" fill="#F5EEDF"/>
+
+    <!-- Arms/shoulders soft -->
+    <ellipse cx="-60" cy="55" rx="15" ry="25" fill="url(#aboutFig)" transform="rotate(-15 -60 55)"/>
+    <ellipse cx="60" cy="55" rx="15" ry="25" fill="url(#aboutFig)" transform="rotate(15 60 55)"/>
+
+    <!-- Apron string -->
+    <line x1="-45" y1="45" x2="-65" y2="35" stroke="#7A5F9C" stroke-width="1" opacity="0.6"/>
+    <line x1="45" y1="45" x2="65" y2="35" stroke="#7A5F9C" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Soft decorative botanical on right -->
+  <g transform="translate(500,200)" opacity="0.5">
+    <line x1="0" y1="0" x2="5" y2="80" stroke="#B7C7AD" stroke-width="1"/>
+    <ellipse cx="-10" cy="30" rx="8" ry="3" fill="#B7C7AD"/>
+    <ellipse cx="12" cy="50" rx="8" ry="3" fill="#B7C7AD"/>
+    <ellipse cx="-8" cy="70" rx="7" ry="3" fill="#B7C7AD"/>
+  </g>
+</svg>

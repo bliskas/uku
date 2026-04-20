@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#EADFC6"/>
+    </linearGradient>
+    <linearGradient id="g1t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1D4EC"/>
+      <stop offset="100%" stop-color="#A791C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="700" fill="url(#g1bg)"/>
+
+  <!-- Soft glow -->
+  <ellipse cx="250" cy="350" rx="200" ry="260" fill="#FBF6EC" opacity="0.5"/>
+
+  <!-- Tall pregnant torso -->
+  <g transform="translate(250,370)">
+    <ellipse cx="0" cy="280" rx="110" ry="18" fill="#7A5F9C" opacity="0.2"/>
+    <path d="
+      M -85,-270 C -95,-230 -100,-180 -95,-130
+      C -115,-80 -130,-20 -135,50
+      C -140,130 -110,210 -55,260
+      C -25,285 25,285 55,260
+      C 110,210 140,130 135,50
+      C 130,-20 115,-80 95,-130
+      C 100,-180 95,-230 85,-270
+      C 65,-290 -65,-290 -85,-270 Z"
+      fill="url(#g1t)"/>
+    <path d="
+      M -85,-270 C -95,-230 -100,-180 -95,-130
+      C -115,-80 -130,-20 -135,50
+      C -140,130 -110,210 -55,260
+      L -50,260 C -55,160 -60,60 -55,-40
+      C -60,-130 -70,-210 -80,-255 Z"
+      fill="#FBF6EC" opacity="0.3"/>
+    <ellipse cx="0" cy="90" rx="4" ry="6" fill="#7A5F9C" opacity="0.35"/>
+  </g>
+
+  <!-- Frame hint / inner line -->
+  <rect x="30" y="30" width="440" height="640" fill="none" stroke="#A791C4" stroke-width="0.8" opacity="0.3"/>
+</svg>

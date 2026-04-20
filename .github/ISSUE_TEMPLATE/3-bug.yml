@@ -1,0 +1,66 @@
+name: 🐛 Algo no funciona
+description: Un botón no hace nada, una foto no carga, la web va lenta o aparece un error
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Vaya, algo no va bien! 🙈
+        Cuéntame qué ocurre y lo miramos enseguida. Cuanto más concreta la info, más rápido lo arreglamos.
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: ¿Qué esperabas que pasara?
+      placeholder: Ej — Al pulsar "Reservar" esperaba que se abriera WhatsApp
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ¿Qué pasa en su lugar?
+      placeholder: Ej — No pasa nada, el botón no reacciona
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para que vuelva a pasar
+      description: Cuenta paso a paso lo que hiciste para que el error aparezca.
+      placeholder: |
+        1. Abro la web en el móvil
+        2. Voy a la sección Servicios
+        3. Pulso el botón "Reservar"
+        4. No pasa nada
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dispositivo
+    attributes:
+      label: ¿Dónde te ha pasado?
+      options:
+        - Móvil iPhone
+        - Móvil Android
+        - Ordenador / portátil
+        - Tablet / iPad
+        - No estoy segura
+    validations:
+      required: true
+
+  - type: input
+    id: navegador
+    attributes:
+      label: Navegador que usaste (opcional)
+      description: Safari, Chrome, Firefox, etc. Si no lo sabes, déjalo en blanco.
+      placeholder: Ej — Safari
+
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura o vídeo del problema (muy recomendado)
+      description: Una captura del momento del error. Un vídeo corto grabando la pantalla también vale.
+      placeholder: Arrastra o pega la imagen/vídeo aquí...

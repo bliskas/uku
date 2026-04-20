@@ -1,0 +1,59 @@
+name: 🎨 Cambio visual / diseño
+description: Cambiar colores, tamaños, tipografía, espaciados o mover algo de sitio
+title: "[Diseño] "
+labels: ["design"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Hola Marina! 👋
+        Cuéntame qué cambio de diseño quieres. Una captura marcando el elemento es oro puro.
+
+  - type: input
+    id: elemento
+    attributes:
+      label: ¿Qué elemento quieres cambiar?
+      description: Describe lo más concreto que puedas qué parte de la web.
+      placeholder: Ej — El botón "Reservar" del menú superior / La foto grande de la portada / Los títulos de los servicios
+    validations:
+      required: true
+
+  - type: textarea
+    id: cambio
+    attributes:
+      label: ¿Qué cambio quieres?
+      description: Describe con tus palabras cómo te gustaría que quedara.
+      placeholder: Ej — Que sea más grande y con color melocotón en vez de lavanda
+    validations:
+      required: true
+
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura marcando dónde (muy recomendado)
+      description: Arrastra una captura de la web. Puedes dibujar flechas encima con el editor del móvil antes de subirla.
+      placeholder: Arrastra o pega una imagen aquí...
+
+  - type: input
+    id: referencia
+    attributes:
+      label: Enlace de referencia o inspiración (opcional)
+      description: Si has visto algo parecido en otra web o en Instagram, pega el enlace aquí.
+      placeholder: https://...
+
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: ¿Cuándo necesitas el cambio?
+      options:
+        - Cuando puedas (sin prisa)
+        - Esta semana estaría bien
+        - Urgente (hoy/mañana)
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Algo más que quieras contarme (opcional)
+      placeholder: Cualquier detalle o contexto adicional.

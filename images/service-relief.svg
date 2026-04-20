@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5EEDF"/>
+      <stop offset="100%" stop-color="#F0E8F5"/>
+    </linearGradient>
+    <linearGradient id="frame1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9C8A3"/>
+      <stop offset="100%" stop-color="#EADFC6"/>
+    </linearGradient>
+    <linearGradient id="torsoRelief" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CBB8DC"/>
+      <stop offset="100%" stop-color="#A791C4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#bg1)"/>
+
+  <!-- Wall texture dots -->
+  <g opacity="0.05" fill="#7A5F9C">
+    <circle cx="80" cy="60" r="1"/>
+    <circle cx="200" cy="400" r="1"/>
+    <circle cx="450" cy="100" r="1"/>
+    <circle cx="520" cy="380" r="1"/>
+  </g>
+
+  <!-- Picture frame -->
+  <g transform="translate(150,60)">
+    <!-- Outer frame -->
+    <rect x="0" y="0" width="300" height="340" fill="url(#frame1)" rx="4"/>
+    <!-- Inner mat -->
+    <rect x="20" y="20" width="260" height="300" fill="#FBF6EC" rx="2"/>
+    <!-- Shadow inside -->
+    <rect x="20" y="20" width="260" height="300" fill="none" stroke="#7A5F9C" stroke-width="0.3" opacity="0.3" rx="2"/>
+
+    <!-- Torso relief in bas-relief -->
+    <g transform="translate(150,175)">
+      <!-- Soft shadow behind torso for depth -->
+      <path d="
+        M -60,-100 C -70,-70 -70,-40 -68,-10
+        C -85,30 -90,70 -85,110
+        C -70,135 -30,140 0,140
+        C 30,140 70,135 85,110
+        C 90,70 85,30 68,-10
+        C 70,-40 70,-70 60,-100
+        C 40,-115 -40,-115 -60,-100 Z"
+        fill="#7A5F9C" opacity="0.12" transform="translate(4,4)"/>
+
+      <!-- Torso shape -->
+      <path d="
+        M -60,-100 C -70,-70 -70,-40 -68,-10
+        C -85,30 -90,70 -85,110
+        C -70,135 -30,140 0,140
+        C 30,140 70,135 85,110
+        C 90,70 85,30 68,-10
+        C 70,-40 70,-70 60,-100
+        C 40,-115 -40,-115 -60,-100 Z"
+        fill="url(#torsoRelief)"/>
+
+      <!-- Highlight -->
+      <path d="
+        M -60,-100 C -70,-70 -70,-40 -68,-10
+        C -85,30 -90,70 -85,110
+        L -50,110 C -55,70 -55,30 -48,-10
+        C -55,-40 -55,-75 -50,-95 Z"
+        fill="#FBF6EC" opacity="0.35"/>
+
+      <!-- Belly button -->
+      <ellipse cx="0" cy="50" rx="3" ry="4" fill="#7A5F9C" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- Small decorative dots (gold) -->
+  <circle cx="110" cy="200" r="2" fill="#D9C8A3" opacity="0.6"/>
+  <circle cx="490" cy="250" r="2" fill="#D9C8A3" opacity="0.6"/>
+  <circle cx="480" cy="60" r="2.5" fill="#D9C8A3" opacity="0.6"/>
+</svg>

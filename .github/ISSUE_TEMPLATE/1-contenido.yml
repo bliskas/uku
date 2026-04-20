@@ -1,0 +1,69 @@
+name: 📝 Cambio de contenido
+description: Cambiar un texto, foto, precio, email o número de teléfono
+title: "[Contenido] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Hola Marina! 👋
+        Rellena el formulario y lo revisaremos enseguida. Los campos marcados con * son obligatorios.
+
+  - type: dropdown
+    id: seccion
+    attributes:
+      label: ¿Qué sección quieres cambiar?
+      options:
+        - Inicio (hero — la portada)
+        - Servicios
+        - Galería
+        - Proceso paso a paso
+        - Sobre mí
+        - Preguntas frecuentes (FAQ)
+        - Contacto
+        - Pie de página (footer)
+        - No estoy segura / Otro
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ¿Qué pone ahora?
+      description: Copia el texto actual o describe lo que hay en esa sección ahora mismo.
+      placeholder: Ej — Ahora pone "Tu embarazo, en arte."
+    validations:
+      required: true
+
+  - type: textarea
+    id: nuevo
+    attributes:
+      label: ¿Qué debería poner?
+      description: Escribe el nuevo texto, o describe el cambio que quieres hacer.
+      placeholder: Ej — Cambiar por "Bellycasting artesanal en Madrid"
+    validations:
+      required: true
+
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura o foto de referencia (opcional)
+      description: Puedes arrastrar una imagen aquí directamente, o pegarla con Ctrl+V.
+      placeholder: Arrastra o pega una imagen aquí...
+
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: ¿Cuándo necesitas el cambio?
+      options:
+        - Cuando puedas (sin prisa)
+        - Esta semana estaría bien
+        - Urgente (hoy/mañana)
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Algo más que quieras contarme (opcional)
+      placeholder: Cualquier detalle o contexto adicional.
