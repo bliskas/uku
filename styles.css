@@ -119,7 +119,8 @@ h1, h2, h3, h4 {
 h1 em, h2 em, h3 em {
     font-family: var(--font-serif);
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.15em;
     color: var(--lavender-700);
 }
 
