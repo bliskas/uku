@@ -1,5 +1,5 @@
 /* ===========================================
-   LUNARIA ESTUDIO — Bellycasting
+   UKU studio — Bellycasting
    Paleta: Lavanda suave + Crema + Blanco roto
    Tipografía: Montserrat + Cormorant Garamond
    =========================================== */
@@ -1157,10 +1157,10 @@ p { color: var(--warm-600); max-width: 60ch; }
 /* ============ WHATSAPP FLOAT ============ */
 .wa-float {
     position: fixed;
-    bottom: 28px;
-    right: 28px;
-    width: 60px;
-    height: 60px;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: #25D366;
     color: white;
@@ -1168,17 +1168,13 @@ p { color: var(--warm-600); max-width: 60ch; }
     align-items: center;
     justify-content: center;
     z-index: 90;
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
     transition: all 0.3s var(--ease);
-    animation: pulse 2.4s infinite;
 }
+.wa-float svg { width: 22px; height: 22px; }
 .wa-float:hover {
     transform: scale(1.08);
-    box-shadow: 0 14px 40px rgba(37, 211, 102, 0.55);
-}
-@keyframes pulse {
-    0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4); }
-    50% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 0 14px rgba(37, 211, 102, 0); }
+    box-shadow: 0 10px 26px rgba(37, 211, 102, 0.5);
 }
 
 /* ============ REVEAL ANIMATION ============ */
@@ -1192,6 +1188,132 @@ p { color: var(--warm-600); max-width: 60ch; }
     transform: translateY(0);
 }
 
+/* ============ HERO LOGO PLACEHOLDER ============ */
+.hero__logo {
+    width: 100px;
+    height: 100px;
+    border: 1.5px dashed var(--lavender-300);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    background: rgba(255, 255, 255, 0.4);
+}
+.hero__logo span {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lavender-500);
+    text-align: center;
+    padding: 0 8px;
+}
+
+/* ============ SERVICIOS — 4 COLUMNAS ============ */
+.services__grid--four {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.services__grid--four .service__body {
+    padding: 24px 22px 22px;
+    gap: 12px;
+}
+.services__grid--four .service__body h3 {
+    font-size: 22px;
+}
+.service__caption {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--lavender-700);
+    margin-top: -4px;
+}
+
+/* ============ ACABADOS Y MATERIALES ============ */
+.materials {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+    margin: 60px 0 30px;
+    padding: 50px;
+    background: var(--lavender-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--lavender-100);
+}
+.materials__copy h3 {
+    font-size: clamp(24px, 2.4vw, 32px);
+    font-weight: 500;
+    margin: 8px 0 16px;
+    color: var(--lavender-900);
+}
+.materials__copy p {
+    color: var(--warm-600);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.65;
+}
+.materials__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 24px;
+}
+.materials__list li {
+    font-size: 14px;
+    color: var(--warm-800);
+    padding-left: 18px;
+    position: relative;
+}
+.materials__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 1px;
+    background: var(--lavender-500);
+}
+.materials__image {
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+/* ============ SIGNIFICADO DE UKU ============ */
+.about__meaning {
+    margin: 36px 0 28px;
+    padding: 28px 30px;
+    border-left: 2px solid var(--lavender-300);
+    background: var(--lavender-50);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.about__meaning-title {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--lavender-900);
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+}
+.about__meaning-tagline {
+    font-size: 15px;
+    color: var(--lavender-700);
+    margin-bottom: 16px !important;
+}
+.about__meaning p {
+    color: var(--warm-600);
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.65;
+}
+.about__meaning p:last-child { margin-bottom: 0; }
+.about__meaning strong {
+    color: var(--lavender-900);
+    font-weight: 500;
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
     .hero__grid { grid-template-columns: 1fr; gap: 60px; }
@@ -1199,6 +1321,9 @@ p { color: var(--warm-600); max-width: 60ch; }
     .hero__frame { margin: 0 auto; }
     .values__grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
     .services__grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto 40px; }
+    .services__grid--four { grid-template-columns: repeat(2, 1fr); max-width: none; }
+    .materials { grid-template-columns: 1fr; padding: 36px; gap: 30px; }
+    .materials__image { max-width: 420px; margin: 0 auto; width: 100%; }
     .gallery__grid { grid-template-columns: repeat(2, 1fr); }
     .gallery__item--wide { grid-column: span 2; }
     .process__steps { grid-template-columns: repeat(2, 1fr); }
@@ -1248,6 +1373,9 @@ p { color: var(--warm-600); max-width: 60ch; }
     .values__grid { grid-template-columns: 1fr; padding: 40px var(--gutter); }
 
     .services, .gallery, .process, .about, .faq, .contact { padding: 80px 0; }
+    .services__grid--four { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto 30px; }
+    .materials { padding: 28px; }
+    .materials__list { grid-template-columns: 1fr; }
 
     .gallery__grid { grid-template-columns: 1fr; grid-auto-rows: 260px; }
     .gallery__item--tall, .gallery__item--wide { grid-row: auto; grid-column: auto; }
@@ -1262,7 +1390,8 @@ p { color: var(--warm-600); max-width: 60ch; }
     .footer { padding: 60px 0 0; }
     .footer__cols { grid-template-columns: 1fr 1fr; gap: 24px; }
 
-    .wa-float { bottom: 18px; right: 18px; width: 56px; height: 56px; }
+    .wa-float { bottom: 16px; right: 16px; width: 44px; height: 44px; }
+    .wa-float svg { width: 20px; height: 20px; }
 }
 
 @media (max-width: 480px) {

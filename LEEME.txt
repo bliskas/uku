@@ -1,5 +1,5 @@
 ===========================================
-  LUNARIA ESTUDIO — Guía rápida para ti
+  UKU studio — Guía rápida para ti
 ===========================================
 
 Esta es tu web. Son 3 archivos:
@@ -33,7 +33,7 @@ Busca y reemplaza estas cosas (usa Ctrl+F para buscar):
      Cámbialo por tu nombre y apellido reales.
 
   C) TU EMAIL
-     Busca:    hola@lunariaestudio.com
+     Busca:    hola@bellycasting.es
      Cámbialo por tu email real (aparece 2 veces).
 
   D) TU INSTAGRAM (opcional)
@@ -68,7 +68,7 @@ La forma más sencilla y gratis es con NETLIFY:
   1. Entra en https://app.netlify.com/drop
   2. Arrastra TODA la carpeta a la zona que te indica.
   3. En 20 segundos te da una dirección tipo:
-        https://lunaria-xxx.netlify.app
+        https://uku-xxx.netlify.app
   4. Eso ya es tu web en internet. Se puede compartir.
 
 
@@ -79,7 +79,7 @@ Como ya tienes dominio comprado:
 
   1. En Netlify, entra en tu web recién subida.
   2. Ve a "Domain settings" → "Add custom domain".
-  3. Escribe tu dominio (ej: lunariaestudio.com).
+  3. Escribe tu dominio (ej: bellycasting.es).
   4. Te dirá unos "DNS records" (números).
   5. Entra en la web donde compraste el dominio
      (GoDaddy, IONOS, Namecheap…) y pégalos allí.
