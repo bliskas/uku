@@ -519,7 +519,7 @@ p { color: var(--warm-600); max-width: 60ch; }
     color: var(--lavender-900);
 }
 .hero__tag--top { top: 30px; left: -30px; }
-.hero__tag--bottom { bottom: 40px; right: -20px; }
+.hero__tag--bottom { bottom: 30px; left: -20px; }
 
 .hero__scroll {
     position: absolute;
@@ -813,7 +813,8 @@ p { color: var(--warm-600); max-width: 60ch; }
     margin-bottom: 22px;
     transition: all 0.4s var(--ease);
 }
-.step:hover .step__num {
+.step:hover .step__num,
+.step.is-visible .step__num {
     background: var(--lavender-500);
     color: var(--white);
     border-color: var(--lavender-500);
@@ -1189,15 +1190,25 @@ p { color: var(--warm-600); max-width: 60ch; }
 }
 
 /* ============ HERO LOGO PLACEHOLDER ============ */
+.hero__title-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+.hero__title-row .hero__title {
+    margin-bottom: 0;
+    flex: 1;
+}
 .hero__logo {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
     border: 1.5px dashed var(--lavender-300);
-    border-radius: var(--radius-md);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 28px;
     background: rgba(255, 255, 255, 0.4);
 }
 .hero__logo span {
@@ -1207,6 +1218,11 @@ p { color: var(--warm-600); max-width: 60ch; }
     color: var(--lavender-500);
     text-align: center;
     padding: 0 8px;
+}
+@media (max-width: 720px) {
+    .hero__title-row { gap: 16px; }
+    .hero__logo { width: 80px; height: 80px; }
+    .hero__logo span { font-size: 9px; letter-spacing: 0.15em; }
 }
 
 /* ============ SERVICIOS — 4 COLUMNAS ============ */
@@ -1364,7 +1380,7 @@ p { color: var(--warm-600); max-width: 60ch; }
     .hero__title { font-size: 44px; }
     .hero__tag--top { top: 15px; left: -10px; padding: 10px 14px; }
     .hero__tag--top strong { font-size: 16px; }
-    .hero__tag--bottom { bottom: 20px; right: -10px; padding: 10px 14px; }
+    .hero__tag--bottom { bottom: 20px; left: -10px; padding: 10px 14px; }
     .hero__tag--bottom strong { font-size: 16px; }
     .hero__cta { flex-direction: column; width: 100%; }
     .hero__cta .btn { width: 100%; }
