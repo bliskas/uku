@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="UKU">
+  <title>UKU</title>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#322a4a" stroke-width="0.8" opacity="0.45"/>
+  <path d="M 16 20 C 16 36 22 46 32 46 C 42 46 48 36 48 20" fill="none" stroke="#322a4a" stroke-width="2.2" stroke-linecap="round"/>
+  <ellipse cx="32" cy="33" rx="3" ry="3.8" fill="#322a4a" opacity="0.9"/>
+</svg>

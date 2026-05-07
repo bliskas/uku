@@ -1207,25 +1207,18 @@ p { color: var(--warm-600); max-width: 60ch; }
     width: 110px;
     height: 110px;
     flex-shrink: 0;
-    border: 1.5px dashed var(--lavender-300);
-    border-radius: 50%;
+    color: var(--lavender-700);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.4);
 }
-.hero__logo span {
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--lavender-500);
-    text-align: center;
-    padding: 0 8px;
+.hero__logo svg {
+    width: 100%;
+    height: 100%;
 }
 @media (max-width: 720px) {
     .hero__title-row { gap: 16px; }
     .hero__logo { width: 80px; height: 80px; }
-    .hero__logo span { font-size: 9px; letter-spacing: 0.15em; }
 }
 
 /* ============ SERVICIOS — 4 COLUMNAS ============ */
