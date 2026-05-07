@@ -261,12 +261,13 @@ p { color: var(--warm-600); max-width: 60ch; }
 .nav__brand-mark svg { width: 100%; height: 100%; }
 .nav__brand-text { display: flex; flex-direction: column; line-height: 1; }
 .nav__brand-name {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 22px;
-    font-weight: 500;
+    font-family: 'Khand', var(--font-sans);
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 300;
     color: var(--lavender-900);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 .nav__brand-sub {
     font-size: 9px;
@@ -1112,7 +1113,7 @@ p { color: var(--warm-600); max-width: 60ch; }
 }
 .footer__brand .nav__brand-name {
     color: var(--cream-50);
-    font-size: 32px;
+    font-size: 38px;
 }
 .footer__brand .nav__brand-sub {
     color: var(--lavender-300);
@@ -1158,10 +1159,12 @@ p { color: var(--warm-600); max-width: 60ch; }
 /* ============ WHATSAPP FLOAT ============ */
 .wa-float {
     position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 48px;
-    height: 48px;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
     border-radius: 50%;
     background: #25D366;
     color: white;
@@ -1169,13 +1172,13 @@ p { color: var(--warm-600); max-width: 60ch; }
     align-items: center;
     justify-content: center;
     z-index: 90;
-    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     transition: all 0.3s var(--ease);
 }
 .wa-float svg { width: 22px; height: 22px; }
 .wa-float:hover {
     transform: scale(1.08);
-    box-shadow: 0 10px 26px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
 }
 
 /* ============ REVEAL ANIMATION ============ */
@@ -1406,7 +1409,7 @@ p { color: var(--warm-600); max-width: 60ch; }
     .footer { padding: 60px 0 0; }
     .footer__cols { grid-template-columns: 1fr 1fr; gap: 24px; }
 
-    .wa-float { bottom: 16px; right: 16px; width: 44px; height: 44px; }
+    .wa-float { bottom: 16px; right: 16px; width: 40px; height: 40px; }
     .wa-float svg { width: 20px; height: 20px; }
 }
 
