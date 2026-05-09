@@ -28,6 +28,44 @@
         });
     }
 
+    // ============ Scrollspy: resalta la sección actual en la nav ============
+    const navAnchors = Array.from(document.querySelectorAll('.nav__links a[href^="#"]'));
+    const sectionMap = new Map();
+    navAnchors.forEach(a => {
+        const id = a.getAttribute('href').slice(1);
+        const section = document.getElementById(id);
+        if (section) sectionMap.set(section, a);
+    });
+
+    if (sectionMap.size) {
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const link = sectionMap.get(entry.target);
+                if (!link) return;
+                if (entry.isIntersecting) {
+                    navAnchors.forEach(a => a.classList.remove('is-active'));
+                    link.classList.add('is-active');
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+        sectionMap.forEach((_, section) => spy.observe(section));
+    }
+
+    // ============ Botón 'volver arriba' ============
+    const backTop = document.getElementById('backToTop');
+    if (backTop) {
+        const toggleBackTop = () => {
+            if (window.scrollY > 600) backTop.classList.add('is-visible');
+            else backTop.classList.remove('is-visible');
+        };
+        window.addEventListener('scroll', toggleBackTop, { passive: true });
+        backTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        toggleBackTop();
+    }
+
     // ============ Reveal on scroll ============
     const revealTargets = document.querySelectorAll(
         '.hero__copy, .hero__visual, .value, .service, .gallery__item, .step, .about__image, .about__copy, .faq__item, .contact__copy, .contact__form, .section-head'
