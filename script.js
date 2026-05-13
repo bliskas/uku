@@ -99,6 +99,45 @@
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // ============ Lightbox para fotos de moldes ============
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    if (lightbox && lightboxImg) {
+        const openLightbox = (src, alt) => {
+            lightboxImg.src = src;
+            lightboxImg.alt = alt || '';
+            lightbox.classList.add('is-open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        };
+        const closeLightbox = () => {
+            lightbox.classList.remove('is-open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            // limpia tras la transición
+            setTimeout(() => { lightboxImg.src = ''; }, 250);
+        };
+
+        document.querySelectorAll('[data-lightbox]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const src = btn.getAttribute('data-lightbox');
+                const alt = btn.getAttribute('aria-label') || '';
+                openLightbox(src, alt);
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+        });
+    }
+
     // ============ Form: open WhatsApp with message ============
     const form = document.querySelector('.contact__form');
     if (form) {
