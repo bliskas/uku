@@ -2,11 +2,17 @@
   UKU studio — Guía rápida para ti
 ===========================================
 
-Esta es tu web. Son 3 archivos:
+Esta es tu web. Los archivos principales son:
 
   - index.html   → El contenido (lo que se ve)
   - styles.css   → Los colores y el diseño
   - script.js    → Los botones que se mueven (no tocar)
+
+Y las tres páginas legales, enlazadas abajo del todo de la web:
+
+  - aviso-legal.html
+  - politica-privacidad.html
+  - politica-cookies.html
 
 
 -------------------------------------------
@@ -33,7 +39,7 @@ Busca y reemplaza estas cosas (usa Ctrl+F para buscar):
      Cámbialo por tu nombre y apellido reales.
 
   C) TU EMAIL
-     Busca:    hola@bellycasting.es
+     Busca:    arte@marinadescalzi.es
      Cámbialo por tu email real (aparece 2 veces).
 
   D) TU INSTAGRAM (opcional)
@@ -126,10 +132,34 @@ tarjetas o instagram:
 Cuando quieras, hablamos de:
 
   - Los precios exactos de cada servicio (ahora "desde 150 €")
-  - Textos legales (aviso legal, política de privacidad, cookies)
   - Si quieres añadir reservas con calendario
   - Si quieres añadir blog o artículos
-  - Fotos reales de tus piezas y del proceso
+  - Fotos y vídeos del proceso de la sesión
+
+
+-------------------------------------------
+ 9. LOS TEXTOS LEGALES
+-------------------------------------------
+Ya están hechos y enlazados en el pie de la web. Dos cosas
+importantes que debes revisar tú:
+
+  A) QUIÉN FIGURA COMO TITULAR
+     Ahora mismo aparecen el NIF y la dirección de Fernando,
+     los mismos que en tramitia.es. Si quien contrata con las
+     clientas y emite las facturas eres tú, hay que cambiarlo
+     por tus datos. Aparece en dos sitios:
+       - aviso-legal.html, apartado 1
+       - politica-privacidad.html, apartado 1
+
+  B) EL CONSENTIMIENTO PARA LAS FOTOS
+     La política de privacidad dice que nunca se publica una
+     foto de una clienta sin su permiso por escrito. Eso hay
+     que cumplirlo: pásale un papel o un mensaje donde te
+     autorice, antes de subir nada a la web o a Instagram.
+
+Si algún día añades Google Analytics, un calendario de reservas
+o cualquier cosa que use cookies, avísame: habría que actualizar
+la política de cookies y poner el banner de aceptación.
 
 
 ¿Dudas? Pregúntame lo que sea, ahí estoy.

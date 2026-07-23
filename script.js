@@ -6,12 +6,15 @@
     const toggle = document.getElementById('navToggle');
     const links = document.querySelector('.nav__links');
 
-    const onScroll = () => {
-        if (window.scrollY > 20) nav.classList.add('is-scrolled');
-        else nav.classList.remove('is-scrolled');
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    // las páginas legales cargan este mismo script y no llevan esta barra
+    if (nav) {
+        const onScroll = () => {
+            if (window.scrollY > 20) nav.classList.add('is-scrolled');
+            else nav.classList.remove('is-scrolled');
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
 
     if (toggle && links) {
         toggle.addEventListener('click', () => {
