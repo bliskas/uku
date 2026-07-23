@@ -799,6 +799,27 @@ p { color: var(--warm-600); max-width: 60ch; }
 .gallery__item--tall { grid-row: span 2; }
 .gallery__item--wide { grid-column: span 2; }
 
+/* ============ DESPUÉS DEL MOLDE ============ */
+/* reutiliza .gallery__grid / .gallery__item; solo cambia el fondo para
+   separarse del Proceso (crema) que va justo antes */
+.finishes {
+    padding: 120px 0;
+    background: linear-gradient(180deg, var(--cream-50) 0%, var(--cream-100) 100%);
+}
+.finishes .section-head { margin-bottom: 56px; }
+/* las ocho fotos son verticales: celda alta y cuatro columnas para que
+   quepan en dos filas sin recortar el torso */
+.finishes__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 420px;
+}
+@media (max-width: 1024px) {
+    .finishes__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 400px; }
+}
+@media (max-width: 720px) {
+    .finishes__grid { grid-template-columns: 1fr; grid-auto-rows: 380px; }
+}
+
 /* ============ PROCESS ============ */
 .process {
     padding: 120px 0;
