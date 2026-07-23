@@ -252,23 +252,19 @@ p { color: var(--warm-600); max-width: 60ch; }
     gap: 12px;
     color: var(--lavender-900);
 }
+/* La silueta de la marca es un filete finísimo. En SVG el navegador la
+   reparte entre dos píxeles y a tamaño de cabecera se deshacía en gris
+   pálido, así que va como PNG con transparencia rasterizado a 4x: el
+   remuestreo del navegador da un trazo mucho más limpio y sólido.
+   Hay dos archivos porque el grosor tiene que ser distinto en cada tamaño;
+   uno solo se vería o demasiado fino arriba o demasiado gordo en el hero. */
 .nav__brand-mark {
-    color: var(--lavender-500);
     width: 31px;
     height: 45px;
     display: block;
     flex-shrink: 0;
 }
-.nav__brand-mark svg { width: 100%; height: 100%; }
-/* el trazo del logo es un filete finísimo; a tamaño de cabecera hay que
-   engordarlo o desaparece, así que el grosor se fija en cada contexto */
-.nav__brand-mark path { stroke-width: 3.4; }
-.nav__brand-mark svg,
-.hero__logo svg {
-    fill: none;
-    stroke: currentColor;
-    stroke-linecap: round;
-}
+.nav__brand-mark img { width: 100%; height: 100%; }
 .nav__brand-text {
     display: inline-flex;
     flex-direction: column;
@@ -1305,20 +1301,17 @@ p { color: var(--warm-600); max-width: 60ch; }
     width: 102px;
     height: 148px;
     flex-shrink: 0;
-    color: var(--lavender-700);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero__logo svg {
+.hero__logo img {
     width: 100%;
     height: 100%;
 }
-.hero__logo path { stroke-width: 1.8; }
 @media (max-width: 720px) {
     .hero__title-row { gap: 16px; }
     .hero__logo { width: 66px; height: 96px; }
-    .hero__logo path { stroke-width: 2.6; }
 }
 
 /* ============ SERVICIOS — 4 COLUMNAS ============ */

@@ -14,6 +14,15 @@ Y las tres páginas legales, enlazadas abajo del todo de la web:
   - politica-privacidad.html
   - politica-cookies.html
 
+Tu logo, dentro de la carpeta "images":
+
+  - logo.png       → El logo completo (UKU / STUDIO / la silueta), con
+                     fondo transparente. Este es el que quieres para
+                     Instagram, tarjetas, etiquetas o WhatsApp.
+  - logo.svg       → El mismo, en vectorial. Para imprenta, porque no
+                     pierde calidad por mucho que lo agrandes.
+  - logo-mark*.png → Solo la silueta. Los usa la web, no los toques.
+
 
 -------------------------------------------
  1. VER LA WEB EN TU ORDENADOR
