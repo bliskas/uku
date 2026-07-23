@@ -273,14 +273,16 @@ p { color: var(--warm-600); max-width: 60ch; }
     color: var(--lavender-900);
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    text-align: center;
-    /* la 'U' final aporta espacio extra a la derecha por el letter-spacing;
-       lo compensamos para que el bloque parezca centrado de verdad */
-    padding-left: 0.18em;
+    text-align: left;
+    /* el letter-spacing deja un hueco sobrante después de la última 'U';
+       lo descontamos para que la caja mida exactamente el ancho visible de
+       UKU y 'STUDIO' pueda empezar y terminar justo en los mismos puntos */
+    margin-right: -0.18em;
 }
 .nav__brand-sub {
     display: flex;
     justify-content: space-between;
+    letter-spacing: 0;
     font-family: 'Khand', var(--font-sans);
     font-size: 11px;
     font-weight: 300;
