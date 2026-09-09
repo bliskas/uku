@@ -32,7 +32,7 @@
     <main class="legal">
         <div class="legal__inner">
             <h1>Política de privacidad</h1>
-            <p class="legal__updated">Última actualización: julio de 2026</p>
+            <p class="legal__updated">Última actualización: septiembre de 2026</p>
 
             <p>En UKU studio nos tomamos en serio la protección de tus datos personales. Esta política explica qué información recogemos, para qué la usamos y cómo la protegemos, conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales.</p>
 
@@ -65,7 +65,7 @@
 
             <h3>2.2. Datos de navegación</h3>
             <p>El formulario de esta web <strong>no envía nada a ningún servidor nuestro</strong>: al pulsar «Enviar mensaje» se abre WhatsApp en tu dispositivo con el texto ya escrito, y eres tú quien decide si lo envías. Mientras no lo envíes, esos datos no salen de tu equipo.</p>
-            <p>Por el simple hecho de visitar la web, el proveedor de alojamiento registra datos técnicos como tu dirección IP, el tipo de navegador y las páginas visitadas, con la única finalidad de mantener el servicio y su seguridad. Esta web <strong>no utiliza cookies propias ni herramientas de analítica</strong>; puedes consultar el detalle en la <a href="politica-cookies.html">política de cookies</a>.</p>
+            <p>Por el simple hecho de visitar la web, el proveedor de alojamiento registra datos técnicos como tu dirección IP, el tipo de navegador y las páginas visitadas, con la única finalidad de mantener el servicio y su seguridad. Esta web <strong>no utiliza cookies propias</strong>. Sí usamos <strong>Google Analytics</strong> para conocer estadísticas de uso, pero únicamente si aceptas el banner de consentimiento que aparece al entrar; puedes consultar el detalle en la <a href="politica-cookies.html">política de cookies</a>.</p>
 
             <h2>3. Para qué usamos tus datos y con qué base legal</h2>
             <div class="legal__table-wrap">
@@ -96,6 +96,7 @@
             <p>No vendemos ni cedemos tus datos con fines comerciales. Pueden acceder a ellos únicamente:</p>
             <ul>
                 <li><strong>WhatsApp (Meta Platforms Ireland Ltd.):</strong> si te comunicas con nosotros por ese canal, tu mensaje y tu número se tratan conforme a las condiciones de WhatsApp, sobre las que no tenemos control.</li>
+                <li><strong>Google Analytics (Google Ireland Ltd.):</strong> solo si aceptas el banner de cookies, para obtener estadísticas anónimas de uso de la web. Puedes rechazarlo en cualquier momento; más detalle en la <a href="politica-cookies.html">política de cookies</a>.</li>
                 <li><strong>El proveedor de alojamiento web y el de correo electrónico</strong>, como encargados del tratamiento y con contrato firmado conforme al artículo 28 del RGPD.</li>
                 <li><strong>Gestoría, asesoría fiscal y entidades bancarias</strong>, cuando sea necesario para facturar y cumplir con Hacienda.</li>
                 <li><strong>Administraciones públicas y juzgados</strong>, cuando exista una obligación legal.</li>
@@ -158,6 +159,17 @@
             </nav>
         </div>
     </footer>
+
+    <!-- ============ COOKIE BANNER ============ -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de cookies">
+        <div class="cookie-banner__inner">
+            <p>Usamos Google Analytics para saber cómo se usa esta web. Solo lo activamos si nos das tu consentimiento. Más info en la <a href="politica-cookies.html">política de cookies</a>.</p>
+            <div class="cookie-banner__actions">
+                <button type="button" id="cookieReject" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+                <button type="button" id="cookieAccept" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
