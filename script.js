@@ -141,6 +141,11 @@
         });
     }
 
+    // ============ Analytics: eventos de contacto (solo si hay consentimiento) ============
+    const trackEvent = (name, params) => {
+        if (typeof window.gtag === 'function') window.gtag('event', name, params);
+    };
+
     // ============ Form: open WhatsApp with message ============
     const form = document.querySelector('.contact__form');
     if (form) {
@@ -165,11 +170,20 @@
                 mensaje ? `\n${mensaje}` : null
             ].filter(Boolean).join('\n');
 
+            trackEvent('generate_lead', { method: 'whatsapp_form' });
+
             // IMPORTANT: actualiza este número en index.html y aquí
             const phone = '34689187877';
             window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
         });
     }
+
+    // ============ Analytics: clics directos a WhatsApp (CTA hero, flotante, footer) ============
+    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+        link.addEventListener('click', () => {
+            trackEvent('contact_whatsapp', { link_location: link.dataset.waLocation || 'unknown' });
+        });
+    });
 
     // ============ Cookie consent + Google Analytics (GA4) ============
     // GA4 solo se carga tras aceptación explícita (RGPD / LSSI-CE)
