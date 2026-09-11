@@ -1769,6 +1769,7 @@ p { color: var(--warm-600); max-width: 60ch; }
     text-decoration-thickness: 1px;
 }
 .legal a:not(.legal-nav__back):hover { color: var(--lavender-900); }
+.legal a.btn, .legal a.btn:hover { text-decoration: none; }
 .legal strong { color: var(--warm-800); font-weight: 600; }
 
 .legal ul, .legal ol {
