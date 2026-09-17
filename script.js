@@ -16,6 +16,36 @@
         onScroll();
     }
 
+    // ============ Trazo fijo en la barra (alinea con la silueta del hero) ============
+    const heroLogo = document.querySelector('.hero__logo');
+    const navSilhouette = document.getElementById('navSilhouette');
+    if (heroLogo && navSilhouette) {
+        const alignNavSilhouette = () => {
+            const rect = heroLogo.getBoundingClientRect();
+            navSilhouette.style.left = `${rect.left}px`;
+            navSilhouette.style.width = `${rect.width}px`;
+            navSilhouette.classList.add('is-positioned');
+        };
+        alignNavSilhouette();
+        window.addEventListener('resize', alignNavSilhouette);
+        window.addEventListener('load', alignNavSilhouette);
+
+        // desaparece en cuanto deja de verse el resto de la silueta en el inicio
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        navSilhouette.classList.toggle('is-visible', entry.isIntersecting);
+                    });
+                },
+                { threshold: 0 }
+            );
+            io.observe(heroLogo);
+        } else {
+            navSilhouette.classList.add('is-visible');
+        }
+    }
+
     if (toggle && links) {
         toggle.addEventListener('click', () => {
             const open = links.classList.toggle('is-open');

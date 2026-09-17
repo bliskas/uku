@@ -1432,20 +1432,48 @@ p { color: var(--warm-600); max-width: 60ch; }
     margin-bottom: 0;
 }
 .hero__logo {
-    width: 102px;
-    height: 148px;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
     flex-shrink: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    transform: translate(-5cm, -2cm);
 }
 .hero__logo img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: -59px;
+    left: 0;
+    width: 130px;
+    height: 189px;
+}
+
+/* ============ TRAZO FIJO EN LA BARRA (pechos de la silueta) ============ */
+.nav__silhouette {
+    position: fixed;
+    top: 10px;
+    z-index: 101;
+    width: 130px;
+    height: 59px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s var(--ease);
+}
+.nav__silhouette.is-positioned.is-visible { opacity: 1; }
+.nav__silhouette img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 189px;
 }
 @media (max-width: 720px) {
+    .nav__silhouette { width: 84px; height: 38px; top: 10px; transform: translateX(12px); }
+    .nav__silhouette img { width: 84px; height: 122px; }
     .hero__title-row { gap: 16px; }
-    .hero__logo { width: 66px; height: 96px; }
+    .hero__logo { width: 84px; height: 84px; transform: translate(-2.5cm, -1cm); }
+    .hero__logo img { top: -38px; width: 84px; height: 122px; }
 }
 
 /* ============ SERVICIOS — 4 COLUMNAS ============ */
