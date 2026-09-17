@@ -141,6 +141,36 @@
         });
     }
 
+    // ============ Experiencia regalo ============
+    const experienceDialog = document.getElementById('experienceDialog');
+    const experienceTrigger = document.getElementById('experienceTrigger');
+    const experienceClose = document.getElementById('experienceClose');
+    const experienceContact = document.getElementById('experienceContact');
+
+    if (experienceDialog && experienceTrigger) {
+        const closeExperience = () => {
+            experienceDialog.classList.remove('is-open');
+            experienceDialog.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        };
+        const openExperience = () => {
+            experienceDialog.classList.add('is-open');
+            experienceDialog.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            if (experienceClose) experienceClose.focus();
+        };
+
+        experienceTrigger.addEventListener('click', openExperience);
+        if (experienceClose) experienceClose.addEventListener('click', closeExperience);
+        if (experienceContact) experienceContact.addEventListener('click', closeExperience);
+        experienceDialog.addEventListener('click', (event) => {
+            if (event.target === experienceDialog) closeExperience();
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && experienceDialog.classList.contains('is-open')) closeExperience();
+        });
+    }
+
     // ============ Analytics: eventos de contacto (solo si hay consentimiento) ============
     const trackEvent = (name, params) => {
         if (typeof window.gtag === 'function') window.gtag('event', name, params);

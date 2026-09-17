@@ -617,6 +617,29 @@
     </footer>
 
     <!-- ============ BACK TO TOP ============ -->
+    <button type="button" class="experience-trigger" id="experienceTrigger" aria-haspopup="dialog" aria-controls="experienceDialog" aria-label="Regala una experiencia">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+            <path d="M12 8v13"></path>
+            <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+            <path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8"></path>
+            <path d="M16.5 8a2.5 2.5 0 0 0 0-5C13 3 12 8 12 8"></path>
+        </svg>
+        <span class="experience-trigger__tooltip">Regala una experiencia</span>
+    </button>
+
+    <!-- ============ EXPERIENCIA REGALO ============ -->
+    <div class="experience-dialog" id="experienceDialog" role="dialog" aria-modal="true" aria-labelledby="experienceTitle" aria-hidden="true">
+        <div class="experience-dialog__panel">
+            <button type="button" class="experience-dialog__close" id="experienceClose" aria-label="Cerrar">×</button>
+            <span class="eyebrow">Una experiencia para compartir</span>
+            <h2 id="experienceTitle">Un momento juntos,<br><em>un recuerdo para siempre.</em></h2>
+            <p>Una experiencia creativa para celebrar a la futura mamá y crear junto a quienes más quiere una pieza única de su embarazo.</p>
+            <p>Se incluyen los materiales y algo rico para compartir. La creación está guiada de principio a fin, con seguimiento de la pieza y fotografías del encuentro para que el recuerdo vaya más allá de la escultura.</p>
+            <a href="#contacto" class="btn btn--primary" id="experienceContact">Quiero saber más</a>
+        </div>
+    </div>
+
     <button type="button" id="backToTop" class="back-top" aria-label="Volver arriba">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 19V5M5 12l7-7 7 7"/>
