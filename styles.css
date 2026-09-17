@@ -952,6 +952,9 @@ p { color: var(--warm-600); max-width: 60ch; }
     line-height: 1.8;
     max-width: none;
 }
+.about__copy p .about__quote {
+    color: var(--lavender-700);
+}
 .about__copy p em {
     font-family: var(--font-serif);
     font-style: italic;
@@ -1420,20 +1423,20 @@ p { color: var(--warm-600); max-width: 60ch; }
 /* ============ HERO LOGO PLACEHOLDER ============ */
 .hero__title-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
     margin-bottom: 28px;
 }
+.hero__title-col { flex: 1; }
 .hero__title-row .hero__title {
     margin-bottom: 0;
-    flex: 1;
 }
 .hero__logo {
     width: 102px;
     height: 148px;
     flex-shrink: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .hero__logo img {
