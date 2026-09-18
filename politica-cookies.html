@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) con Consent Mode v2: sin cookies hasta que se acepte el banner -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        var ukuConsent = null;
+        try { ukuConsent = localStorage.getItem('uku_cookie_consent'); } catch (e) {}
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: ukuConsent === 'accepted' ? 'granted' : 'denied'
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-Q04RC65N0H');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q04RC65N0H"></script>
     <meta name="description" content="Política de cookies de UKU studio — qué cookies usa esta web y cómo gestionarlas.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bellycasting.es/politica-cookies.html">
@@ -36,7 +52,7 @@
             <p class="legal__updated">Última actualización: septiembre de 2026</p>
 
             <div class="legal__note">
-                <p><strong>En resumen:</strong> esta web no instala cookies propias. Usamos <strong>Google Analytics</strong> para saber cómo se usa el sitio, pero solo se activa si nos das tu consentimiento en el banner que aparece al entrar. Si lo rechazas, no se instala ninguna cookie de analítica. No hacemos publicidad ni seguimiento.</p>
+                <p><strong>En resumen:</strong> esta web no instala cookies propias. Usamos <strong>Google Analytics</strong> para saber cómo se usa el sitio, pero sus cookies solo se instalan si nos das tu consentimiento en el banner que aparece al entrar. Si lo rechazas, no se instala ninguna cookie de analítica y Google solo recibe avisos anónimos de visita, sin cookies ni identificadores. No hacemos publicidad ni seguimiento.</p>
             </div>
 
             <h2>1. ¿Qué son las cookies?</h2>
@@ -50,7 +66,7 @@
                 <li>El Reglamento (UE) 2016/679 de Protección de Datos (RGPD).</li>
                 <li>La Guía sobre el uso de las cookies de la Agencia Española de Protección de Datos (AEPD).</li>
             </ul>
-            <p>Conforme a esa normativa, solo pueden instalarse cookies no técnicas —como las de analítica— con el <strong>consentimiento previo e informado del usuario</strong>. Por eso verás un banner al entrar en la web: mientras no pulses «Aceptar», no se instala ninguna cookie de Google Analytics.</p>
+            <p>Conforme a esa normativa, solo pueden instalarse cookies no técnicas —como las de analítica— con el <strong>consentimiento previo e informado del usuario</strong>. Por eso verás un banner al entrar en la web: mientras no pulses «Aceptar», no se instala ninguna cookie de Google Analytics. Usamos el «modo de consentimiento» de Google: sin tu aceptación, la etiqueta solo envía avisos anónimos de visita, sin cookies ni identificadores que permitan reconocerte.</p>
 
             <h2>3. Cookies que utiliza esta web</h2>
             <div class="legal__table-wrap">

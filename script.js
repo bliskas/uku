@@ -246,29 +246,16 @@
     });
 
     // ============ Cookie consent + Google Analytics (GA4) ============
-    // GA4 solo se carga tras aceptación explícita (RGPD / LSSI-CE)
-    const GA_ID = 'G-Q04RC65N0H';
+    // gtag.js se carga en el <head> de cada página con Consent Mode v2
+    // (analytics_storage 'denied' por defecto): sin cookies hasta que se acepte el banner.
     const CONSENT_KEY = 'uku_cookie_consent'; // 'accepted' | 'rejected'
 
-    const loadAnalytics = () => {
-        if (window.gaLoaded) return;
-        window.gaLoaded = true;
-
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function gtag() { window.dataLayer.push(arguments); };
-        window.gtag('js', new Date());
-        window.gtag('config', GA_ID, { anonymize_ip: true });
-
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-        document.head.appendChild(script);
+    const grantAnalytics = () => {
+        if (typeof window.gtag === 'function') window.gtag('consent', 'update', { analytics_storage: 'granted' });
     };
 
     let consent = null;
     try { consent = localStorage.getItem(CONSENT_KEY); } catch (err) { /* almacenamiento no disponible */ }
-
-    if (consent === 'accepted') loadAnalytics();
 
     const cookieBanner = document.getElementById('cookieBanner');
     if (cookieBanner && !consent) {
@@ -281,7 +268,7 @@
 
         const acceptBtn = document.getElementById('cookieAccept');
         const rejectBtn = document.getElementById('cookieReject');
-        if (acceptBtn) acceptBtn.addEventListener('click', () => { setConsent('accepted'); loadAnalytics(); });
+        if (acceptBtn) acceptBtn.addEventListener('click', () => { setConsent('accepted'); grantAnalytics(); });
         if (rejectBtn) rejectBtn.addEventListener('click', () => setConsent('rejected'));
     }
 })();

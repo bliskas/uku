@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) con Consent Mode v2: sin cookies hasta que se acepte el banner -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        var ukuConsent = null;
+        try { ukuConsent = localStorage.getItem('uku_cookie_consent'); } catch (e) {}
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: ukuConsent === 'accepted' ? 'granted' : 'denied'
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-Q04RC65N0H');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q04RC65N0H"></script>
     <meta name="description" content="9 ideas de regalo para una embarazada que van más allá de la ropita y las cremas, con el bellycasting como la opción que más se recuerda. Guía de UKU studio, Madrid.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bellycasting.es/ideas-regalo-embarazada.html">
