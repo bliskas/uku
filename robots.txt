@@ -1,4 +1,28 @@
+# bellycasting.es — UKU studio
+# Todo el sitio es público: buscadores y asistentes de IA pueden rastrearlo y citarlo.
+
 User-agent: *
+Allow: /
+
+# Buscadores
+User-agent: Googlebot
+User-agent: Bingbot
+Allow: /
+
+# Asistentes y buscadores de IA
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: MistralAI-User
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://bellycasting.es/sitemap.xml
