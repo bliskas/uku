@@ -1469,11 +1469,12 @@ p { color: var(--warm-600); max-width: 60ch; }
     height: 189px;
 }
 @media (max-width: 720px) {
-    .nav__silhouette { width: 84px; height: 38px; top: 10px; transform: translateX(12px); }
-    .nav__silhouette img { width: 84px; height: 122px; }
+    /* en móvil no hay espacio junto al menú hamburguesa: se oculta el
+       trazo fijo de la barra y se muestra la silueta completa en el hero */
+    .nav__silhouette { display: none; }
     .hero__title-row { gap: 16px; }
-    .hero__logo { width: 84px; height: 84px; transform: translate(-2.5cm, -1cm); }
-    .hero__logo img { top: -38px; width: 84px; height: 122px; }
+    .hero__logo { width: 64px; height: 93px; overflow: visible; transform: translate(-0.8cm, -0.3cm); }
+    .hero__logo img { top: 0; width: 64px; height: 93px; }
 }
 
 /* ============ SERVICIOS — 4 COLUMNAS ============ */
