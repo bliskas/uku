@@ -48,7 +48,7 @@ Busca y reemplaza estas cosas (usa Ctrl+F para buscar):
      Cámbialo por tu nombre y apellido reales.
 
   C) TU EMAIL
-     Busca:    arte@marinadescalzi.es
+     Busca:    mdguercio8@gmail.com
      Cámbialo por tu email real (aparece 2 veces).
 
   D) TU INSTAGRAM (opcional)
